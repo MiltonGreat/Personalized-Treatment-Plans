@@ -23,19 +23,19 @@ Healthcare systems generate vast amounts of patient and treatment data. This pro
 - Encodes categorical variables.
 - Normalizes numeric features.
 
-Feature Engineering:
+2. Feature Engineering:
 - Combines existing features to create derived metrics.
 - Introduces patient-treatment similarity scoring.
 
-Model Training:
+3. Model Training:
 - Logistic Regression, Random Forest, and XGBoost classifiers.
 - GridSearchCV and RandomizedSearchCV for hyperparameter tuning.
 
-Evaluation:
+4. Evaluation:
 - Classification metrics (accuracy, precision, recall, F1-score).
 - Recommendations evaluated using precision@k, recall@k, and NDCG@k.
 
-Recommendations:
+5. Recommendations:
 - Uses cosine similarity to suggest the most suitable treatments for each patient.
 
 ### Recommendation Evaluation
