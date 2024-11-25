@@ -4,7 +4,9 @@
 
 This repository contains a machine learning pipeline to recommend the most effective treatments for patients based on their profiles. The model leverages classification algorithms, similarity metrics, and feature engineering techniques to personalize recommendations, enabling data-driven clinical decision support.
 
-Healthcare systems generate vast amounts of patient and treatment data. This project utilizes machine learning to:
+### Objectives
+
+Healthcare systems generate vast amounts of patient and treatment data. This project uses machine learning to:
 
 - Predict treatment success based on patient profiles.
 - Recommend the most suitable treatments for specific patients.
