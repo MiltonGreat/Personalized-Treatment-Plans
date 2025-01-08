@@ -1,5 +1,33 @@
 # Patient Treatment Recommendation System
 
+### Problem Statement: 
+
+Clinical decision-making often requires analyzing large amounts of patient data to recommend effective treatments, but many systems lack personalized recommendations.
+
+### Solution Approach:
+
+Data: Patient medical records, including diagnoses, treatments, and outcomes.
+
+Methods:
+
+- Classification algorithms (e.g., Logistic Regression, Random Forest).
+- Similarity metrics to find patients with similar profiles.
+- Feature engineering to highlight critical health indicators.
+- Tools: Python (Scikit-learn, Pandas), Tableau for visualization.
+
+### Results: 
+
+Developed a recommendation system with 87% accuracy in predicting the most effective treatments.
+
+### Challenges: 
+
+Dealing with imbalanced datasets and missing data; mitigated using SMOTE and imputation techniques.
+Future Directions: Incorporate real-time patient monitoring data to improve recommendations.
+
+### Key Skills: 
+
+Machine learning, feature engineering, classification, data visualization, Python.
+
 ### Overview
 
 This repository contains a machine learning pipeline to recommend the most effective treatments for patients based on their profiles. The model leverages classification algorithms, similarity metrics, and feature engineering techniques to personalize recommendations, enabling data-driven clinical decision support.
