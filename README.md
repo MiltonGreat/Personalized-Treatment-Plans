@@ -1,78 +1,54 @@
 # Patient Treatment Recommendation System
 
-### Problem Statement: 
+### Overview: 
 
-Clinical decision-making often requires analyzing large amounts of patient data to recommend effective treatments, but many systems lack personalized recommendations.
+This project addresses the challenge of personalized clinical decision-making by developing a machine learning-based system to recommend the most effective treatments for patients. Leveraging classification algorithms and similarity metrics, the system achieved 87% accuracy, enhancing treatment efficacy and supporting data-driven healthcare decisions.
+
+### Problem Statement
+
+Problem: Clinical decision-making often requires processing complex and large-scale patient data to recommend treatments. However, many existing systems lack personalization, leading to suboptimal outcomes.
+
+Significance: By leveraging machine learning, this project aims to provide tailored treatment recommendations, improving clinical outcomes and optimizing healthcare efficiency.
+
+### Data
+
+- Patient Medical Records: Age, symptoms, chronic diseases, and other health indicators.
+- Treatment Data: Effectiveness ratings and side-effect scores.
+- Labels: Success or failure of treatments.
 
 ### Solution Approach:
 
-Data: Patient medical records, including diagnoses, treatments, and outcomes.
+1. Data Cleaning
+- Missing Data: Numerical features were imputed using median values, and categorical features were imputed using mode.
+- Normalization: Applied Min-Max scaling to normalize numeric features.
 
-Methods:
+2. Exploratory Data Analysis (EDA)
+- Identified key correlations between patient attributes and treatment success.
+- Visualized data distributions to uncover patterns and potential biases.
 
-- Classification algorithms (e.g., Logistic Regression, Random Forest).
-- Similarity metrics to find patients with similar profiles.
-- Feature engineering to highlight critical health indicators.
-- Tools: Python (Scikit-learn, Pandas), Tableau for visualization.
+3. Feature Engineering
+- Created derived metrics highlighting critical health indicators.
+- Introduced patient-treatment similarity scores using cosine similarity.
+
+4. Model Building
+- Algorithms: Tested Logistic Regression, Random Forest, and XGBoost.
+- Optimization: Hyperparameters were fine-tuned using GridSearchCV and RandomizedSearchCV.
+
+5. Evaluation
+- Used metrics including accuracy, precision, recall, F1-score, and ROC-AUC.
+- Evaluated treatment recommendations with precision@k, recall@k, and NDCG@k.
 
 ### Results: 
 
-Developed a recommendation system with 87% accuracy in predicting the most effective treatments.
+- Model Performance: Achieved 87% accuracy in predicting treatment success.
+- Precision@2: 1.000
+- Recall@2: 0.833
+- NDCG@2: 0.871
 
 ### Challenges: 
 
-Dealing with imbalanced datasets and missing data; mitigated using SMOTE and imputation techniques.
-Future Directions: Incorporate real-time patient monitoring data to improve recommendations.
-
-### Key Skills: 
-
-Machine learning, feature engineering, classification, data visualization, Python.
-
-### Overview
-
-This repository contains a machine learning pipeline to recommend the most effective treatments for patients based on their profiles. The model leverages classification algorithms, similarity metrics, and feature engineering techniques to personalize recommendations, enabling data-driven clinical decision support.
-
-### Objectives
-
-Healthcare systems generate vast amounts of patient and treatment data. This project uses machine learning to:
-
-- Predict treatment success based on patient profiles.
-- Recommend the most suitable treatments for specific patients.
-- Improve clinical outcomes by supporting data-driven decisions.
-
-### Dataset
-
-- Patient Data: Age, symptoms, chronic disease presence, and more.
-- Treatment Data: Effectiveness and side-effect scores.
-- Labels: Success or failure of treatments.
-
-### Workflow
-
-1. Data Preprocessing:
-- Handles missing values with imputation.
-- Encodes categorical variables.
-- Normalizes numeric features.
-
-2. Feature Engineering:
-- Combines existing features to create derived metrics.
-- Introduces patient-treatment similarity scoring.
-
-3. Model Training:
-- Logistic Regression, Random Forest, and XGBoost classifiers.
-- GridSearchCV and RandomizedSearchCV for hyperparameter tuning.
-
-4. Evaluation:
-- Classification metrics (accuracy, precision, recall, F1-score).
-- Recommendations evaluated using precision@k, recall@k, and NDCG@k.
-
-5. Recommendations:
-- Uses cosine similarity to suggest the most suitable treatments for each patient.
-
-### Recommendation Evaluation
-
-- Precision@2	1.000
-- Recall@2	0.833
-- NDCG@2	0.871
+- Imbalanced Data: Mitigated using SMOTE to balance class distributions.
+- Missing Data: Addressed using imputation techniques for robust predictions
 
 ### Future Work
 
